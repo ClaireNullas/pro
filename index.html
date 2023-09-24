@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* For mobile phones: */
+[class*="col-"] {
+  min-width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+header {
+    font-size: 20px;
+  font-style: oblique;
+  grid-area: header;
+  background-color: #96604f;
+  padding: 10px;
+  text-align: center;
+
+}
+article {
+  grid-area: content;
+  background-color: #eeeae7;
+  padding: 10px;
+  overflow: hidden;
+}
+aside {
+  grid-area: sidebar;
+  background-color: #a88070;
+}
+.profile img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px grey;
+}
+.name {
+    font-weight: bold;
+    font-size: 25px;
+}
+footer {
+  padding: 20px;
+  grid-area: footer;
+  background-color: #96604f;
+  text-align: center;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "header  header"
+    "sidebar content"
+    "footer  footer";
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="wrapper">
+    <header><h1>Profile</h1></header>
+    <article>
+      <h1>Basic Information</h1>
+      <p> Name: Claire C. Nullas</p>
+      <p> Adress: Brgy. Cabadiangan Sipalay City, Negros Occidental</p>
+      <p> Birthday: April 7, 2003</p>
+      <p> Contact no: 09957216568</p>
+      <p> Skills: designing</p>
+      <p> Hobbies: Sleeping, Cooking</p>
+      <h1> Educational Background</h1>
+      <p> Elementary: Cabadiangan Elementary School</p>
+      <p> JSH: Gil Montilla National High School</p>
+      <p> SHS: Gil Montilla National High School</p>
+      <h1> Future Plans and Goals</h1>
+      <p> After I graduate in this course, I will then look for a job that suits my choosen course. </p>
+      <p> My goal is to be a successful business woman and I will use my degree to reach this goal of mine.</p>
+      
+    </article>
+    <aside><ul><li>
+        <div class="sidenav">
+            <div class="profile">
+                <img src="clara.jpg" alt="" width="100" height="100">
+    
+                <div class="name">
+                    Clara
+                </div>
+                <div class="usernmame">
+                   Username
+                </div>
+            </div>
+    
+            <div class="sidenav-url">
+                <div class="url">
+                    <a href="#profile" class="active">Profile</a>
+                    <hr align="center">
+                </div>
+                <div class="url">
+                    <a href="#settings">Settings</a>
+                    <hr align="center">
+                </div>
+            </div>
+        </div>
+    </li></ul></aside>
+    <footer><h1>Social Media</h1>
+    </footer>
+  </div>
+
+</body>
+</html>
+
+
